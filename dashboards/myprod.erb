@@ -1,0 +1,36 @@
+<script type='text/javascript'>
+	      $(function() {
+		              Dashing.gridsterLayout('[{"col":3,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":3},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":2,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1}]')
+			            });
+				          </script>    
+<% content_for :title do %>My PROD Dashboard<% end %>
+<div class="gridster">
+
+<ul>
+      
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="welcome" data-view="Text" data-title="Welcome to My Dashboard" data-text="" data-moreinfo="you can move widget">
+    </div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="bookmarks_frequency" data-view="Fullpie" data-title=""></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+	<i class="icon-time icon-background"></i>
+      </li>
+     <li data-row="1" data-col="4" data-sizex="1" data-sizey="3">
+       <div data-id="myappcount" data-view="List" data-unordered="true" data-title="Applications count" data-moreinfo="# http application request"></div>
+     </li>
+     <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+          <div data-id="myappgroup" data-view="List" data-unordered="true" data-title="Applications groups count" data-moreinfo="# http sector request"></div>
+     </li>
+     <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+       <div data-id="total" data-view="Graph" data-title="ALL HTTP CONNECTIONS" style="background-color:#ff9618"></div>
+     </li>
+     <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+       <div data-id="nagios-prod" data-view="Nagios" data-unordered="true" data-title="Nagios Prod" data-moreinfo="Unacknowledged events"></div>
+     </li>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+<h1>Puppet ETAI Status</h1>
+ 
+<div class="row">
+	<div class="col">
+		<h2 class="success" data-bind="successes"></h2><span>with status change</span>
+	</div>
+	<div class="col" style="float:right;">
+		<h2 class="failure" data-bind="failures"></h2><span>with status failed</span>
+	</div>
+</div>
+ 
+<div class="row">
+	<div class="col" style="width: 33%;">
+		<h2 data-bind="num_nodes"></h2><span>Population</span>
+	</div>
+	<div class="col" style="float:left; width: 33%;">
+		<h2 data-bind="num_resources"></h2><span>Resources managed</span>
+	</div>
+	<div class="col" style="float:left; width: 33%;">
+		<h2 data-bind="avg_resource"></h2><span>Avg. resource/node</span>
+	</div>
+</div> 
